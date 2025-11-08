@@ -97,209 +97,7 @@
       margin-bottom: 10px;
       transform: translateY(10px);
     }
-    /* Uiverse button styles START */
-    .type--A {
-      --line_color: #555555;
-      --back_color: #ffecf6;
-    }
-    .type--B {
-      --line_color: #1b1919;
-      --back_color: #e9ecff;
-    }
-    .type--C {
-      --line_color: #00135c;
-      --back_color: #defffa;
-    }
-    .button1 {
-      position: relative;
-      z-index: 0;
-      width: 240px;
-      height: 56px;
-      text-decoration: none;
-      font-size: 14px;
-      font-weight: bold;
-      color: var(--line_color);
-      letter-spacing: 2px;
-      transition: all 0.3s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 10px;
-      background: var(--back_color);
-      border: none;
-      border-radius: 16px;
-      overflow: hidden;
-    }
-    .button1__text {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100%;
-      height: 100%;
-    }
-    .button1::before,
-    .button1::after,
-    .button1__text::before,
-    .button1__text::after {
-      content: "";
-      position: absolute;
-      height: 3px;
-      border-radius: 2px;
-      background: var(--line_color);
-      transition: all 0.5s ease;
-    }
-    .button1::before {
-      top: 0;
-      left: 54px;
-      width: calc(100% - 56px * 2 - 16px);
-    }
-    .button1::after {
-      top: 0;
-      right: 54px;
-      width: 8px;
-    }
-    .button1__text::before {
-      bottom: 0;
-      right: 54px;
-      width: calc(100% - 56px * 2 - 16px);
-    }
-    .button1__text::after {
-      bottom: 0;
-      left: 54px;
-      width: 8px;
-    }
-    .button1__line {
-      position: absolute;
-      top: 0;
-      width: 56px;
-      height: 100%;
-      overflow: hidden;
-    }
-    .button1__line::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 150%;
-      height: 100%;
-      box-sizing: border-box;
-      border-radius: 300px;
-      border: solid 3px var(--line_color);
-    }
-    .button1__line:nth-child(1),
-    .button1__line:nth-child(1)::before {
-      left: 0;
-    }
-    .button1__line:nth-child(2),
-    .button1__line:nth-child(2)::before {
-      right: 0;
-    }
-    .button1:hover {
-      letter-spacing: 6px;
-    }
-    .button1:hover::before,
-    .button1:hover .button__text::before {
-      width: 8px;
-    }
-    .button1:hover::after,
-    .button1:hover .button__text::after {
-      width: calc(100% - 56px * 2 - 16px);
-    }
-    .button1__drow1,
-    .button1__drow2 {
-      position: absolute;
-      z-index: -1;
-      border-radius: 16px;
-      transform-origin: 16px 16px;
-    }
-    .button1__drow1 {
-      top: -16px;
-      left: 40px;
-      width: 32px;
-      height: 0;
-      transform: rotate(30deg);
-    }
-    .button1__drow2 {
-      top: 44px;
-      left: 77px;
-      width: 32px;
-      height: 0;
-      transform: rotate(-127deg);
-    }
-    .button1__drow1::before,
-    .button1__drow1::after,
-    .button1__drow2::before,
-    .button1__drow2::after {
-      content: "";
-      position: absolute;
-    }
-    .button1__drow1::before {
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 32px;
-      border-radius: 16px;
-      transform-origin: 16px 16px;
-      transform: rotate(-60deg);
-    }
-    .button1__drow1::after {
-      top: -10px;
-      left: 45px;
-      width: 0;
-      height: 32px;
-      border-radius: 16px;
-      transform-origin: 16px 16px;
-      transform: rotate(69deg);
-    }
-    .button1__drow2::before {
-      bottom: 0;
-      left: 0;
-      width: 0;
-      height: 32px;
-      border-radius: 16px;
-      transform-origin: 16px 16px;
-      transform: rotate(-146deg);
-    }
-    .button1__drow2::after {
-      bottom: 26px;
-      left: -40px;
-      width: 0;
-      height: 32px;
-      border-radius: 16px;
-      transform-origin: 16px 16px;
-      transform: rotate(-262deg);
-    }
-    .button1__drow1,
-    .button1__drow1::before,
-    .button1__drow1::after,
-    .button1__drow2,
-    .button1__drow2::before,
-    .button1__drow2::after {
-      background: var(--back_color);
-    }
-    .button1:hover .button__drow1 {
-      animation: drow1 ease-in 0.06s;
-      animation-fill-mode: forwards;
-    }
-    .button1:hover .button__drow1::before {
-      animation: drow2 linear 0.08s 0.06s;
-      animation-fill-mode: forwards;
-    }
-    .button1:hover .button__drow1::after {
-      animation: drow3 linear 0.03s 0.14s;
-      animation-fill-mode: forwards;
-    }
-    .button1:hover .button__drow2 {
-      animation: drow4 linear 0.06s 0.2s;
-      animation-fill-mode: forwards;
-    }
-    .button1:hover .button__drow2::before {
-      animation: drow3 linear 0.03s 0.26s;
-      animation-fill-mode: forwards;
-    }
-    .button1:hover .button__drow2::after {
-      animation: drow5 linear 0.06s 0.32s;
-      animation-fill-mode: forwards;
-    }
+  
     @keyframes drow1 {
       0% {height: 0;}
       100% {height: 100px;}
@@ -322,7 +120,6 @@
       0% {width: 0;}
       100% {width: 124px;}
     }
-    /* Uiverse button styles END */
     @media (max-width: 900px) {
       .left-panel {
         position: static;
@@ -340,6 +137,310 @@
         flex-direction: column;
       }
     }
+    /* From Uiverse.io by Ashon-G */ 
+.uiverse {
+  --duration: 7s;
+  --easing: linear;
+  --c-color-1: rgba(255, 163, 26, 0.7);
+  --c-color-2: #1a23ff;
+  --c-color-3: #e21bda;
+  --c-color-4: rgba(255, 232, 26, 0.7);
+  --c-shadow: rgba(255, 223, 87, 0.5);
+  --c-shadow-inset-top: rgba(255, 223, 52, 0.9);
+  --c-shadow-inset-bottom: rgba(255, 250, 215, 0.8);
+  --c-radial-inner: #ffd215;
+  --c-radial-outer: #fff172;
+  --c-color: #fff;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: table;
+  border-radius: 24px;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: var(--c-color);
+  background: radial-gradient(
+    circle,
+    var(--c-radial-inner),
+    var(--c-radial-outer) 80%
+  );
+  box-shadow: 0 0 14px var(--c-shadow);
+}
+
+.uiverse:before {
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  z-index: 3;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 24px;
+  box-shadow:
+    inset 0 3px 12px var(--c-shadow-inset-top),
+    inset 0 -3px 4px var(--c-shadow-inset-bottom);
+}
+
+.uiverse .wrapper {
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  overflow: hidden;
+  border-radius: 24px;
+  min-width: 132px;
+  padding: 12px 0;
+}
+
+.uiverse .wrapper span {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.uiverse:hover {
+  --duration: 1400ms;
+}
+
+.uiverse .wrapper .circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: blur(var(--blur, 8px));
+  background: var(--background, transparent);
+  transform: translate(var(--x, 0), var(--y, 0)) translateZ(0);
+  animation: var(--animation, none) var(--duration) var(--easing) infinite;
+}
+
+.uiverse .wrapper .circle.circle-1,
+.uiverse .wrapper .circle.circle-9,
+.uiverse .wrapper .circle.circle-10 {
+  --background: var(--c-color-4);
+}
+
+.uiverse .wrapper .circle.circle-3,
+.uiverse .wrapper .circle.circle-4 {
+  --background: var(--c-color-2);
+  --blur: 14px;
+}
+
+.uiverse .wrapper .circle.circle-5,
+.uiverse .wrapper .circle.circle-6 {
+  --background: var(--c-color-3);
+  --blur: 16px;
+}
+
+.uiverse .wrapper .circle.circle-2,
+.uiverse .wrapper .circle.circle-7,
+.uiverse .wrapper .circle.circle-8,
+.uiverse .wrapper .circle.circle-11,
+.uiverse .wrapper .circle.circle-12 {
+  --background: var(--c-color-1);
+  --blur: 12px;
+}
+
+.uiverse .wrapper .circle.circle-1 {
+  --x: 0;
+  --y: -40px;
+  --animation: circle-1;
+}
+
+.uiverse .wrapper .circle.circle-2 {
+  --x: 92px;
+  --y: 8px;
+  --animation: circle-2;
+}
+
+.uiverse .wrapper .circle.circle-3 {
+  --x: -12px;
+  --y: -12px;
+  --animation: circle-3;
+}
+
+.uiverse .wrapper .circle.circle-4 {
+  --x: 80px;
+  --y: -12px;
+  --animation: circle-4;
+}
+
+.uiverse .wrapper .circle.circle-5 {
+  --x: 12px;
+  --y: -4px;
+  --animation: circle-5;
+}
+
+.uiverse .wrapper .circle.circle-6 {
+  --x: 56px;
+  --y: 16px;
+  --animation: circle-6;
+}
+
+.uiverse .wrapper .circle.circle-7 {
+  --x: 8px;
+  --y: 28px;
+  --animation: circle-7;
+}
+
+.uiverse .wrapper .circle.circle-8 {
+  --x: 28px;
+  --y: -4px;
+  --animation: circle-8;
+}
+
+.uiverse .wrapper .circle.circle-9 {
+  --x: 20px;
+  --y: -12px;
+  --animation: circle-9;
+}
+
+.uiverse .wrapper .circle.circle-10 {
+  --x: 64px;
+  --y: 16px;
+  --animation: circle-10;
+}
+
+.uiverse .wrapper .circle.circle-11 {
+  --x: 4px;
+  --y: 4px;
+  --animation: circle-11;
+}
+
+.uiverse .wrapper .circle.circle-12 {
+  --blur: 14px;
+  --x: 52px;
+  --y: 4px;
+  --animation: circle-12;
+}
+
+@keyframes circle-1 {
+  33% {
+    transform: translate(0px, 16px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 64px) translateZ(0);
+  }
+}
+
+@keyframes circle-2 {
+  33% {
+    transform: translate(80px, -10px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(72px, -48px) translateZ(0);
+  }
+}
+
+@keyframes circle-3 {
+  33% {
+    transform: translate(20px, 12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(12px, 4px) translateZ(0);
+  }
+}
+
+@keyframes circle-4 {
+  33% {
+    transform: translate(76px, -12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(112px, -8px) translateZ(0);
+  }
+}
+
+@keyframes circle-5 {
+  33% {
+    transform: translate(84px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(40px, -32px) translateZ(0);
+  }
+}
+
+@keyframes circle-6 {
+  33% {
+    transform: translate(28px, -16px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(76px, -56px) translateZ(0);
+  }
+}
+
+@keyframes circle-7 {
+  33% {
+    transform: translate(8px, 28px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(20px, -60px) translateZ(0);
+  }
+}
+
+@keyframes circle-8 {
+  33% {
+    transform: translate(32px, -4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(56px, -20px) translateZ(0);
+  }
+}
+
+@keyframes circle-9 {
+  33% {
+    transform: translate(20px, -12px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(80px, -8px) translateZ(0);
+  }
+}
+
+@keyframes circle-10 {
+  33% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(100px, 28px) translateZ(0);
+  }
+}
+
+@keyframes circle-11 {
+  33% {
+    transform: translate(4px, 4px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(68px, 20px) translateZ(0);
+  }
+}
+
+@keyframes circle-12 {
+  33% {
+    transform: translate(56px, 0px) translateZ(0);
+  }
+
+  66% {
+    transform: translate(60px, -32px) translateZ(0);
+  }
+}
+
   </style>
 </head>
 <body>
@@ -349,15 +450,26 @@
     <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 10px;">
       <img src="Random junk/Me.png" alt="Me" style="width:130px;height:140px;">
     </div>
-    <div class="container">
-      <a href="Doucuments/Resume.pdf" class="button1 type--C">
-        <span class="button1__text">Download Resume</span>
-        <div class="button1__line"></div>
-        <div class="button1__line"></div>
-        <div class="button1__drow1"></div>
-        <div class="button1__drow2"></div>
-      </a>
-    </div>
+    <a href="Doucuments/Resume.pdf">
+      <button class="uiverse">
+        <div class="wrapper">
+          <span>Download resume</span>
+          <div class="circle circle-12"></div>
+          <div class="circle circle-11"></div>
+          <div class="circle circle-10"></div>
+          <div class="circle circle-9"></div>
+          <div class="circle circle-8"></div>
+          <div class="circle circle-7"></div>
+          <div class="circle circle-6"></div>
+          <div class="circle circle-5"></div>
+          <div class="circle circle-4"></div>
+          <div class="circle circle-3"></div>
+          <div class="circle circle-2"></div>
+          <div class="circle circle-1"></div>
+        </div>  
+      </button>
+    </a>
+    
     <div style="margin-top: auto;">
       <h4>Rezno Teams.</h4>
     </div>
@@ -384,7 +496,6 @@
     </div>
     <br><br>
     <div id="00io">
-      <!-- Skills section -->
       <div>
         <span><img src="Random junk/Html.png" alt="HTML Skill" style="width:30px;height:30px;"></span>
         <span><h4 style="display: inline; margin-left:0px;">Html:</h4></span>
@@ -396,21 +507,21 @@
         <span><img src="Random junk/Css.png" alt="CSS Skill" style="width:30px;height:30px;"></span>
         <span><h4 style="display: inline; margin-left:0px;">Css:</h4></span>
         <div class="w3-light-grey w3-round-xlarge">
-          <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">60%</div>
+          <div class="w3-container w3-blue w3-round-xlarge" style="width:60%">80%</div>
         </div>
       </div>
       <div>
         <span><img src="Random junk/Sql.png" alt="SQL Skill" style="width:30px;height:30px;"></span>
         <span><h4 style="display: inline; margin-left:0px;">Sql:</h4></span>
         <div class="w3-light-grey w3-round-xlarge">
-          <div class="w3-container w3-red w3-round-xlarge" style="width:20%">20%</div>
+          <div class="w3-container w3-red w3-round-xlarge" style="width:50%">50%</div>
         </div>
       </div>
       <div>
         <span><img src="Random junk/Figma.png" alt="Figma Skill" style="width:30px;height:30px;"></span>
         <span><h4 style="display: inline; margin-left:0px;">Figma:</h4></span>
         <div class="w3-light-grey w3-round-xlarge">
-          <div class="w3-container w3-pink w3-round-xlarge" style="width:40%">40%</div>
+          <div class="w3-container w3-pink w3-round-xlarge" style="width:60%">60%</div>
         </div>
       </div>
       <div>
@@ -431,14 +542,14 @@
         <span><img src="Random junk/PrimerPro.png" alt="Premiere Pro Skill" style="width:30px;height:30px;"></span>
         <span><h4 style="display: inline; margin-left:0px;">Premiere Pro:</h4></span>
         <div class="w3-light-grey w3-round-xlarge">
-          <div class="w3-container w3-red w3-round-xlarge" style="width:30%">30%</div>
+          <div class="w3-container w3-red w3-round-xlarge" style="width:50%">50%</div>
         </div>
       </div>
       <div>
         <span><img src="Random junk/Js.png" alt="JavaScript Skill" style="width:30px;height:30px;"></span>
         <span><h4 style="display: inline; margin-left:0px;">JavaScript:</h4></span>
         <div class="w3-light-grey w3-round-xlarge">
-          <div class="w3-container w3-red w3-round-xlarge" style="width:20%">20%</div>
+          <div class="w3-container w3-red w3-round-xlarge" style="width:50%">50%</div>
         </div>
       </div>
       <div>
@@ -452,7 +563,6 @@
     <br><br>
     <h3 style="text-align:center;">My recent projects:</h3>
     <div class="recent-projects">
-      <!-- Repeat your .potato project blocks as needed, unchanged -->
       <div class="potato">
         <img src="Immages/NP2024.png" width="100%" alt="NooriPlayer2024 cover">
         <details>
